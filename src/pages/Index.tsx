@@ -66,21 +66,21 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground antialiased">
       {/* HEADER */}
-      <header className="fixed top-0 inset-x-0 z-50 bg-forest-deep/95 backdrop-blur-md border-b border-white/10">
+      <header className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-border shadow-sm">
         <div className="container flex items-center justify-between h-16">
-          <a href="#home" className="flex items-center gap-2 text-white">
+          <a href="#home" className="flex items-center gap-2 text-forest-deep">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-solar text-forest-deep">
               <Icon name="Sun" size={20} />
             </div>
-            <span className="font-heading text-xl tracking-wider">47<span className="text-solar">VOLTS</span></span>
+            <span className="font-heading text-xl tracking-wider">47<span className="text-forest">VOLTS</span></span>
           </a>
           <nav className="hidden lg:flex items-center gap-7">
             {NAV.map((n) => (
-              <a key={n.href} href={n.href} className="text-sm font-medium text-white/80 hover:text-solar transition-colors">{n.label}</a>
+              <a key={n.href} href={n.href} className="text-sm font-medium text-foreground/70 hover:text-forest transition-colors">{n.label}</a>
             ))}
           </nav>
           <a href="tel:+78120000000" className="hidden sm:block">
-            <Button className="bg-solar text-forest-deep hover:bg-solar/90 font-semibold">+7 (812) 000-00-00</Button>
+            <Button className="bg-forest text-white hover:bg-forest-deep font-semibold">+7 (812) 000-00-00</Button>
           </a>
         </div>
       </header>
