@@ -88,7 +88,8 @@ const Index = () => {
       {/* HERO */}
       <section id="home" className="relative pt-16 min-h-[92vh] flex items-center overflow-hidden">
         <img src={HERO_IMG} alt="Солнечная электростанция в Ленинградской области" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-forest-deep/95 via-forest-deep/80 to-forest-deep/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-950/80 via-orange-900/50 to-yellow-500/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-amber-900/40 via-transparent to-yellow-300/20" />
         <div className="container relative py-20">
           <div className="max-w-2xl animate-fade-in">
             <span className="inline-flex items-center gap-2 rounded-full bg-solar/15 border border-solar/30 px-4 py-1.5 text-sm font-medium text-solar mb-6">
